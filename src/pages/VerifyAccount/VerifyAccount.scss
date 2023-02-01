@@ -1,0 +1,122 @@
+.verify-container{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    padding:20px 0;
+
+
+    .verify{
+        display:flex;
+        width:100%;
+        border-radius: 20px;
+        overflow: hidden;
+    
+        &__content{
+            flex:1;
+            background:#e3ecff;
+            padding:30px;
+            padding-right: 100px;
+    
+            @media screen and (max-width:900px){
+                padding: 15px;
+            }
+    
+    
+            &--logo{
+                display:grid;
+                place-items:center;
+
+                img{
+                    
+                    @media screen and (max-width:900px){
+                        height:70px;
+                    }
+                }
+            }
+    
+            &--title{
+                margin-bottom: 2rem;
+    
+                h1{
+                    font-weight: 500;
+
+                    @media screen and (max-width:900px){
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    font-family: var(--sub-font);
+                    font-weight:400;
+                }
+            }
+    
+            &--inputs{
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                width:fit-content;
+                display:flex;
+    
+                input{
+                    background:transparent;
+                    width: 58px;
+                    height:77px;
+                    border-radius: 5px;
+                    border: 1.5px solid #01C8FF;
+                    text-align:center;
+                    outline:none;
+                    font-size:22px;
+                    color:#01C8FF;
+
+                    &:focus{
+                        border: 1.5px solid #01C8FF;
+                    }
+
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
+                    @media screen and (max-width:900px){
+                        width: 38px;
+                        height:57px;
+                    }
+                }
+            }
+
+            &--resend{
+                text-align:center;
+                margin-bottom: 50px;
+                margin-top: 20px;
+                
+                span{
+                    color: #01C8FF;
+                }
+            }
+    
+            &--btn{
+                max-width:528px;
+                width:100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:30px;
+            }
+        }
+    
+        &__image{
+            display:grid;
+            place-items: center;
+            background: #01C8FF;
+    
+            @media screen and (max-width:900px){
+                display:none;
+            }
+            
+            img{
+                max-width:546px;
+                max-height:428px;
+                width:100%;
+                height:100%;
+                transform:translateX(-60px);
+            }
+        }
+    }
+}

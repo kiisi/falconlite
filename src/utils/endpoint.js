@@ -1,0 +1,1 @@
+export const endpoint = 'https://falconlite.com/v1/api'
