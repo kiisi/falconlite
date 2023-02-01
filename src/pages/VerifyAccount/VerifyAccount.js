@@ -102,7 +102,7 @@ const VerifyAccount = () => {
                     <div className="verify__content--title">
                         <h1>Kindly enter Email verifiication code</h1>
                         <p>To Sign up, kindly enter the verification code sent to your email address</p>
-                        <p>{verifyname} <span>change Email</span></p>
+                        <p>{verifyname} <span className="change-email">change Email</span></p>
                     </div>
                     <div className="verify__content--inputs">
                       <input type="text" maxLength="1" onChange={verifyInput} autoComplete="off"/>

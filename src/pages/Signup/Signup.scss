@@ -48,6 +48,11 @@
                 font-family: var(--sub-font);
                 font-weight:400;
             }
+
+            .change-email{
+                text-decoration:underline;
+                color:#01C8FF;
+            }
         }
 
         &--input{
@@ -82,7 +87,8 @@
             text-align: center;
 
             span{
-                text-decoration:none;
+                text-decoration:underline;
+                color:#01C8FF;
             }
         }
     }
